@@ -1,0 +1,68 @@
+import random
+
+# Intro
+print("Bem-vindo ao nosso jogo!"
+      "O teu 0bjetivo é descobrir a palavra secreta, em português, constituída por 5 letras.")
+print("VERDE significa letra correta no espaço correto.")
+print("AMARELO significa letra correta no espaço errado.")
+print("VERMELHO significa que essa letra não existe nessa palavra.")
+
+
+# Palavra secreta: PORTA
+palavras_possiveis = ["unhas", "porta"]
+palavra_secreta = random.choice(palavras_possiveis)
+lista_palavra_secreta = list(palavra_secreta)
+print(lista_palavra_secreta)
+
+# Contador de vidas
+vidas = 5
+acertou = False
+if not acertou:
+      vidas -= 1
+
+# Resposta
+while vidas > 0:
+      p1 = input("Palavra:")
+      p1 = p1.lower()
+      p1_lista = list(p1)
+      if p1 == palavra_secreta:
+          print("Acertaste!")
+          break
+      else:
+          # 0
+            if p1_lista[0] == lista_palavra_secreta[0]:
+                  print("VERDE")
+            elif p1_lista[0] == lista_palavra_secreta[1] or p1_lista[0] == lista_palavra_secreta[2] or p1_lista[0] == lista_palavra_secreta[3] or p1_lista[0] == palavra_secreta[4]:
+                  print("AMARELO")
+            else:
+                  print("VERMELHO")
+            # 1
+            if p1_lista[1] == palavra_secreta[1]:
+                print("VERDE")
+            elif p1_lista[1] == palavra_secreta[0] or p1_lista[1] == palavra_secreta[2] or p1_lista[1] == palavra_secreta[3] or p1_lista[1] == palavra_secreta[4]:
+                print("AMARELO")
+            else:
+                print("VERMELHO")
+            # 2
+            if p1_lista[2] == palavra_secreta[2]:
+                print("VERDE")
+            elif p1_lista[2] == palavra_secreta[0] or p1_lista[2] == palavra_secreta[1] or p1_lista[2] == palavra_secreta[3] or p1_lista[2] == palavra_secreta[4]:
+                print("AMARELO")
+            else:
+                print("VERMELHO")
+            # 3
+            if p1_lista[3] == palavra_secreta[3]:
+                print("VERDE")
+            elif p1_lista[3] == palavra_secreta[0] or p1_lista[3] == palavra_secreta[1] or p1_lista[3] == palavra_secreta[2] or p1_lista[3] == palavra_secreta[4]:
+                print("AMARELO")
+            else:
+                print("VERMELHO")
+            # 4
+            if p1_lista[4] == palavra_secreta[4]:
+                print("VERDE")
+            elif p1_lista[3] == palavra_secreta[0] or p1_lista[3] == palavra_secreta[1] or p1_lista[3] == palavra_secreta[2] or p1_lista[3] == palavra_secreta[3]:
+                print("AMARELO")
+            else:
+                print("VERMELHO")
+if vidas == 0:
+    print("Ficaste sem vidas. GAME OVER")
