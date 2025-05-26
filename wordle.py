@@ -66,3 +66,4 @@ while vidas > 0:
             print(f"Tens {vidas} vidas restantes.")
 if vidas == 0:
     print("Ficaste sem vidas. GAME OVER")
+    print(f"A palavra era '{palavra_secreta}'.")
