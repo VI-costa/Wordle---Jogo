@@ -9,7 +9,7 @@ print("VERMELHO significa que essa letra não existe nessa palavra.")
 
 
 # Palavra secreta
-palavras_possiveis = ["unhas", "porta"]
+palavras_possiveis = [ 'abrir', 'acaso', 'achar', 'advem', 'anjos', 'agudo', 'algum', 'alibi', 'aluno', 'ambas', 'amigo', 'anais', 'andar', 'antes', 'apelo', 'arder', 'atual', 'audaz', 'autor', 'aviar', 'axila', 'banal', 'barao', 'bocal', 'busca', 'calao', 'calda', 'calor', 'campa', 'campo', 'carma', 'carro', 'certa', 'chama', 'chata', 'chefe', 'chuva', 'civil', 'clero', 'cocho', 'corar', 'coser', 'corpo', 'cozer', 'credo', 'crise', 'custo', 'daqui', 'debil', 'deixa', 'desde', 'desse', 'deter', 'diabo', 'digno', 'disso', 'enfim', 'enjoo', 'estar', 'facto', 'fauna', 'favor', 'feira', 'feliz', 'farpa', 'ficha', 'filho', 'finjo', 'firma', 'flora', 'forte', 'fossa', 'fugiu', 'gerir', 'gosto', 'grupo', 'homem', 'ideal', 'jazia', 'juizo', 'karma', 'lapis', 'lapso', 'legal', 'letra', 'ligar', 'limbo', 'linha', 'louco', 'louca', 'macro', 'magia', 'magoa', 'maior', 'manga', 'manso', 'meiga', 'miope', 'misto', 'molde', 'mover', 'museu', 'neste', 'noite', 'norma', 'nuvem', 'oasis', 'obter', 'orcas', 'ouvir', 'paira', 'pajem', 'pardo', 'patio', 'pedra', 'pegar', 'penta', 'perda', 'pluma', 'porem', 'posse', 'prado', 'preto', 'prole', 'porto', 'pudor', 'rente', 'repor', 'salsa', 'saude', 'seita', 'selar', 'senda', 'serao', 'serio', 'sesta', 'setor', 'senha', 'sorte', 'tecer', 'temer', 'tenso', 'tento', 'tenue', 'treta', 'torso', 'tribo', 'turva', 'valer', 'vasto', 'vedar', 'velar', 'velho', 'vendo', 'verde', 'verme', 'versa', 'vetor', 'video', 'viril', 'vista', 'votar', 'voraz', 'vosso']
 palavra_secreta = random.choice(palavras_possiveis)
 lista_palavra_secreta = list(palavra_secreta)
 print(lista_palavra_secreta)
