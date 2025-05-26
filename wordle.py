@@ -7,7 +7,6 @@ print("VERDE significa letra correta no espaço correto.")
 print("AMARELO significa letra correta no espaço errado.")
 print("VERMELHO significa que essa letra não existe nessa palavra.")
 
-
 # Palavra secreta
 palavras_possiveis = ["unhas", "porta"]
 palavra_secreta = random.choice(palavras_possiveis)
