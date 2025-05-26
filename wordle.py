@@ -58,12 +58,13 @@ while vidas > 0:
             # Quinta letra
             if p1_lista[4] == palavra_secreta[4]:
                 print("VERDE")
-            elif p1_lista[3] == palavra_secreta[0] or p1_lista[3] == palavra_secreta[1] or p1_lista[3] == palavra_secreta[2] or p1_lista[3] == palavra_secreta[3]:
+            elif p1_lista[4] == palavra_secreta[0] or p1_lista[4] == palavra_secreta[1] or p1_lista[4] == palavra_secreta[2] or p1_lista[4] == palavra_secreta[3]:
                 print("AMARELO")
             else:
                 print("VERMELHO")
             vidas -= 1
             print(f"Tens {vidas} vidas restantes.")
+# Se ficar sem vidas
 if vidas == 0:
     print("Ficaste sem vidas. GAME OVER")
     print(f"A palavra era '{palavra_secreta}'.")
